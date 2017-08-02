@@ -1,6 +1,6 @@
 # BoilerPy
 
-##About
+## About
 
 BoilerPy is a native Python port of Christian Kohlschütter's Boilerpipe library, released under the Apache 2.0 Licence. (http://code.google.com/p/boilerpipe/
 )
@@ -12,7 +12,7 @@ BoilerPy was created with the help of the excellent Java2Python library :(https:
 )
 
 
-##Installation
+## Installation
 
 Download the package from dist/BoilerPy1.0.zip
 
@@ -22,7 +22,7 @@ BoilerPy was packaged with distutils.  In can be installed as following:
 >python setup.py install
 ```
 
-##Usage
+## Usage
 
 The top-level interfaces are extractors.  Use getContent() to extract the filtered text.
 
@@ -51,39 +51,39 @@ title=doc.getTitle()
 
 ```
 
-##Extractors
+## Extractors
 
-###ARTICLE_EXTRACTOR
+### ARTICLE_EXTRACTOR
 
 A full-text extractor which is tuned towards news articles. In this scenario it achieves higher accuracy than DefaultExtractor. Works very well for most types of Article-like HTML.
 
 
-###DEFAULT_EXTRACTOR
+### DEFAULT_EXTRACTOR
 
 Usually worse than ArticleExtractor, but simpler/no heuristics.  A quite generic full-text extractor. 
 
 
-###LARGEST_CONTENT_EXTRACTOR
+### LARGEST_CONTENT_EXTRACTOR
 
 A full-text extractor which extracts the largest text component of a page.  For news articles, it may perform better than the DefaultExtractor but usually worse than ArticleExtractor
 
 
-###CANOLA_EXTRACTOR
+### CANOLA_EXTRACTOR
 
 Trained on krdwrd Canola (different definition of "boilerplate"). You may give it a try.
 
 
-###KEEP_EVERYTHING_EXTRACTOR
+### KEEP_EVERYTHING_EXTRACTOR
 
 Marks everything as content. Dummy Extractor; should return the input text. Use this to double-check that your problem is within a particular Extractor or somewhere else.
 
 
-###NUM_WORDS_RULES_EXTRACTOR
+### NUM_WORDS_RULES_EXTRACTOR
 
 A quite generic full-text extractor solely based upon the number of words per block (the current, the previous and the next block).
 
 
-###ARTICLE_SENTENCES_EXTRACTOR
+### ARTICLE_SENTENCES_EXTRACTOR
 
 A full-text extractor which is tuned towards extracting sentences from news articles.
 
